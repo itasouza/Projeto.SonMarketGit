@@ -8,10 +8,17 @@ Identity Framework Core para autenticação e controle de acesso de usuários(AC
 Tecnologias utilizadas:
 
 ASP.NET Core
+
 Bootstrap
+
 Entity Framework
+
 Identity Core
+
 Jquery
+
 DataTables
+
 Chart.js
+
 Azure

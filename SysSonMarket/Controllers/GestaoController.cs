@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SysSonMarket.Data;
+using SysSonMarket.Dto;
 
 namespace SysSonMarket.Controllers
 {
@@ -25,13 +26,25 @@ namespace SysSonMarket.Controllers
 
         public IActionResult ListarCategoria()
         {
-            return View();
+            var categorias = database.Categorias.Where(cat => cat.Status == true).ToList();
+            return View(categorias);
         }
 
         public IActionResult NovaCategoria()
         {
             return View();
         }
+
+        public IActionResult EditarCategoria(int id)
+        {
+            var categoria = database.Categorias.First(cat => cat.Id == id);
+            CategoriaDto categoriaView = new CategoriaDto();
+            categoriaView.Id = categoria.Id;
+            categoriaView.Nome = categoria.Nome;
+            return View(categoriaView);
+        }
+
+
 
         public IActionResult ListarFornecedor()
         {

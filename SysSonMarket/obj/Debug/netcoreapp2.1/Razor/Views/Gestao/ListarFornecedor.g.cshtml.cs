@@ -66,7 +66,7 @@ using SysSonMarket.Models;
             WriteLiteral("\r\n<h2>Listar Fornecedor</h2>\r\n<hr />\r\n");
             EndContext();
             BeginContext(144, 104, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "41c7adcb5c9e479a97fc947a2dd9fa36", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fd512a1c85a5405f807c004ab44d2fe7", async() => {
                 BeginContext(223, 21, true);
                 WriteLiteral("Criar novo Fornecedor");
                 EndContext();

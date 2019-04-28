@@ -24,6 +24,7 @@ namespace SysSonMarket.Controllers
             return View();
         }
 
+        #region Categoria
         public IActionResult ListarCategoria()
         {
             var categorias = database.Categorias.Where(cat => cat.Status == true).ToList();
@@ -43,18 +44,35 @@ namespace SysSonMarket.Controllers
             categoriaView.Nome = categoria.Nome;
             return View(categoriaView);
         }
+        #endregion
 
 
+        #region Fornecedor
 
         public IActionResult ListarFornecedor()
         {
-            return View();
+            var fornecedor = database.Fornecedores.Where(forne => forne.Status == true).ToList();
+            return View(fornecedor);
         }
 
         public IActionResult NovoFornecedor()
         {
             return View();
         }
+
+        public IActionResult EditarFornecedor(int id)
+        {
+            var fornecedor = database.Fornecedores.First(forne => forne.Id == id);
+            FornecedorDto fornecedorView = new FornecedorDto();
+            fornecedorView.Id = fornecedor.Id;
+            fornecedorView.Nome = fornecedor.Nome;
+            fornecedorView.Email = fornecedor.Email;
+            fornecedorView.Telefone = fornecedor.Telefone;
+            return View(fornecedorView);
+        }
+
+        #endregion
+
 
 
         public IActionResult ListarProduto()

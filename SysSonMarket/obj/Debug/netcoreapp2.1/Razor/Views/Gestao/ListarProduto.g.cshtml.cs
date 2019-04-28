@@ -66,7 +66,7 @@ using SysSonMarket.Models;
             WriteLiteral("\r\n<h2>Listar Produtos</h2>\r\n<hr />\r\n");
             EndContext();
             BeginContext(139, 98, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e753a95f808d4b839f8e583398aae016", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef5842c0aaf4481c9f3141823d6fadf5", async() => {
                 BeginContext(215, 18, true);
                 WriteLiteral("Criar novo Produto");
                 EndContext();

@@ -39,7 +39,42 @@ namespace SysSonMarket.Controllers
                //  return RedirectToAction("NovoFornecedor", "Gestao");
             }
 
-
         }
+
+
+        [HttpPost]
+        public IActionResult Atualizar(FornecedorDto dadosTemporario)
+        {
+            if (ModelState.IsValid)
+            {
+                var fornecedor = database.Fornecedores.First(forne => forne.Id == dadosTemporario.Id);
+                fornecedor.Id = dadosTemporario.Id;
+                fornecedor.Nome = dadosTemporario.Nome;
+                fornecedor.Email = dadosTemporario.Email;
+                fornecedor.Telefone = dadosTemporario.Telefone;
+                database.SaveChanges();
+                return RedirectToAction("ListarFornecedor", "Gestao");
+            }
+            else
+            {
+                return View("../Gestao/EditarFornecedor");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Deletar(int Id)
+        {
+            if (Id > 0)
+            {
+                var fornecedor = database.Fornecedores.First(forne => forne.Id == Id);
+                fornecedor.Status = false;
+                database.SaveChanges();
+            }
+            return RedirectToAction("ListarFornecedor", "Gestao");
+        }
+
+
+
+
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SysSonMarket.Data;
 using SysSonMarket.Dto;
 
@@ -74,11 +75,11 @@ namespace SysSonMarket.Controllers
         #endregion
 
 
-
+        #region Produto
         public IActionResult ListarProduto()
         {
-
-            return View();
+            var produto = database.Produtos.Include(p => p.Categoria).Include(p => p.Fornecedor).Where(p => p.Status == true).ToList();
+            return View(produto);
         }
 
         public IActionResult NovoProduto()
@@ -88,6 +89,25 @@ namespace SysSonMarket.Controllers
 
             return View();
         }
+
+        public IActionResult EditarProduto(int id)
+        {
+            var produto = database.Produtos.Include(p => p.Categoria).Include(p => p.Fornecedor).First(pro => pro.Id == id);
+            ViewBag.Categorias = database.Categorias.ToList();
+            ViewBag.Fornecedor = database.Fornecedores.ToList();
+
+            ProdutoDto produtoView = new ProdutoDto();
+            produtoView.Id = produto.Id;
+            produtoView.Nome = produto.Nome;
+            produtoView.PrecoDeCusto = produto.PrecoDeCusto;
+            produtoView.PrecoDeVenda = produto.PrecoDeVenda;
+            produtoView.Medicao = produto.Medicao;
+            produtoView.CategoriaID = produto.Categoria.Id;
+            produtoView.FornecedorID = produto.Fornecedor.Id;
+
+            return View(produtoView);
+        }
+        #endregion
 
 
     }

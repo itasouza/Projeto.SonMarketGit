@@ -58,6 +58,9 @@ C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\SysSonMarket
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\SysSonMarket.TagHelpers.output.cache
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\SysSonMarket.RazorCoreGenerate.cache
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Views\Gestao\EditarCategoria.g.cshtml.cs
+C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Views\Gestao\EditarFornecedor.g.cshtml.cs
+C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Views\Gestao\EditarProduto.g.cshtml.cs
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Views\Gestao\Index.g.cshtml.cs
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Views\Gestao\ListarCategoria.g.cshtml.cs
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Views\Gestao\ListarFornecedor.g.cshtml.cs
@@ -82,5 +85,3 @@ C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\SysSonMarket
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\SysSonMarket.dll
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\SysSonMarket.pdb
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\SysSonMarket.csproj.CopyComplete
-C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Views\Gestao\EditarCategoria.g.cshtml.cs
-C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Views\Gestao\EditarFornecedor.g.cshtml.cs

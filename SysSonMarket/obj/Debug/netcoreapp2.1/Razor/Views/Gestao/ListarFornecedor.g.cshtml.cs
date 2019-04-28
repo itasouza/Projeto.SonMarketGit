@@ -71,7 +71,7 @@ using SysSonMarket.Models;
             WriteLiteral("\r\n<h2>Listar Fornecedor</h2>\r\n<hr />\r\n");
             EndContext();
             BeginContext(198, 104, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "105dce33a8f64d11b6fb517407e624cb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16380b9ca38e4c3292f5b371b4a60a28", async() => {
                 BeginContext(277, 21, true);
                 WriteLiteral("Criar novo Fornecedor");
                 EndContext();
@@ -178,7 +178,7 @@ WriteAttributeValue("", 1099, fornecedor.Id, 1099, 14, false);
             WriteLiteral(">Editar</a>\r\n\r\n                ");
             EndContext();
             BeginContext(1145, 259, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab83db035e784cf88a5c1fbf9e31fb1c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01c6f3d0921147918bd69a2d45945635", async() => {
                 BeginContext(1224, 60, true);
                 WriteLiteral("\r\n                    <input type=\"hidden\" name=\"id\" id=\"id\"");
                 EndContext();

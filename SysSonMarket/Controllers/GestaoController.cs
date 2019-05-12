@@ -110,5 +110,34 @@ namespace SysSonMarket.Controllers
         #endregion
 
 
+        #region promoção
+        public IActionResult ListarPromocao()
+        {
+            var promocao = database.Promocoes.Include(p => p.Produto).Where(p => p.Status == true).ToList();
+            return View(promocao);
+        }
+
+        public IActionResult NovoPromocao()
+        {
+            ViewBag.Produto = database.Produtos.ToList();
+            return View();
+        }
+
+        public IActionResult EditarPromocao(int id)
+        {
+            var promocao = database.Promocoes.Include(p => p.Produto).First(pro => pro.Id == id);
+            ViewBag.Produto = database.Produtos.ToList();
+
+            PromocaoDTO promocaoView = new PromocaoDTO();
+            promocaoView.Id = promocao.Id;
+            promocaoView.Nome = promocao.Nome;
+            promocaoView.ProdutoID = promocao.Produto.Id;
+            promocaoView.Porcentagem = promocao.Porcentagem;
+            return View(promocaoView);
+        }
+
+        #endregion
+
+
     }
 }

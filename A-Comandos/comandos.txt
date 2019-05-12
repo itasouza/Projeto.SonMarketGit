@@ -1,0 +1,19 @@
+﻿--criando o projeto
+dotnet new mvc --auth individual --use-local-db
+
+--adicionar biblioteca mysql
+Pomelo.EntityFrameworkCore.Mysql -version 2.2.0
+
+--Excluir a pasta Migrations para recriar as tabelas do Identity
+
+--criar uma nova migração 
+Add-Migration CreateIdentitySchema
+Update-Database
+
+--criar uma nova migração
+Add-Migration CreatesonMarketSchema
+
+--Revertendo Migrações
+Update-Database NomeDaMigração
+
+Remove-Migration NomeDaMigração -Force

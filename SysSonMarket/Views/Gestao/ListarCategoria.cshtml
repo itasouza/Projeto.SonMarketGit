@@ -11,17 +11,8 @@
 
 <hr />
 
-@section scriptgeral
-{
-    <script type="Text/javascript">
-        $(document).ready(function () {
-            $("#categorias").DataTable();
-        });
-    </script>
-}
 
-
-<table id="categorias" class="table table-striped table-bordered">
+<table id="dados" class="table table-striped table-bordered responsive nowrap" style="width:100%">
     <thead>
         <tr>
             <th>Id</th>
@@ -35,13 +26,14 @@
             <tr>
                 <td>@categoria.Id</td>
                 <td>@categoria.Nome</td>
-                <td> <a class="btn btn-primary" href="/Gestao/EditarCategoria/@categoria.Id">Editar</a>  
+                <td>
+                    <a class="btn btn-primary" href="/Gestao/EditarCategoria/@categoria.Id">Editar</a>
 
-                <form asp-controller="Categoria" asp-action="Deletar" style="display:inline;">
-                    <input type="hidden" name="id" id="id" value="@categoria.Id"/>
-                    <button class="btn btn-danger">Deletar</button>
-                </form>
-                    
+                    <form asp-controller="Categoria" asp-action="Deletar" style="display:inline;">
+                        <input type="hidden" name="id" id="id" value="@categoria.Id" />
+                        <button class="btn btn-danger">Deletar</button>
+                    </form>
+
             </tr>
         }
 

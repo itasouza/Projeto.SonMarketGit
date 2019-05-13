@@ -58,8 +58,7 @@ namespace SysSonMarket.Controllers
             }
             else
             {
-                ViewBag.Categorias = database.Categorias.ToList();
-                ViewBag.Fornecedor = database.Fornecedores.ToList();
+                ViewBag.Produto = database.Produtos.ToList();
                 return View("../Gestao/EditarPromocao");
             }
         }

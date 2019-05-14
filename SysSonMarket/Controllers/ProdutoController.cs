@@ -81,5 +81,31 @@ namespace SysSonMarket.Controllers
             return RedirectToAction("ListarProduto", "Gestao");
         }
 
+        [HttpPost]
+        public IActionResult RetornarProdutoTelaVenda(int Id)
+        {
+            if (Id > 0)
+            {
+                var produto = database.Produtos.Where(p => p.Status == true).Include(p => p.Categoria).Include(p => p.Fornecedor).First(pro => pro.Id == Id);
+                if(produto != null)
+                {
+                    Response.StatusCode = 200; //ok
+                    return Json(produto);
+                }
+                else
+                {
+                    Response.StatusCode = 404; //falha
+                    return Json(null);
+                }
+            }
+            else
+            {
+                Response.StatusCode = 404; //falha
+                return Json(null);
+            }
+
+
+        }
+
     }
 }

@@ -79,7 +79,7 @@ using SysSonMarket.Models;
             ");
             EndContext();
             BeginContext(489, 308, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3d3d899592d4ecd843759f0d485c779", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9c305dfe096e4bc9ba33b8d038859d54", async() => {
                 BeginContext(595, 198, true);
                 WriteLiteral("\r\n                <span class=\"float-left\">Ver todas</span>\r\n                <span class=\"float-right\">\r\n                    <i class=\"fas fa-angle-right\"></i>\r\n                </span>\r\n            ");
                 EndContext();
@@ -115,7 +115,7 @@ using SysSonMarket.Models;
             ");
             EndContext();
             BeginContext(1190, 309, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5aa264be8fce46988376542400a6a504", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da1455a8dbb7404d9028a5a16efdff13", async() => {
                 BeginContext(1297, 198, true);
                 WriteLiteral("\r\n                <span class=\"float-left\">Ver todos</span>\r\n                <span class=\"float-right\">\r\n                    <i class=\"fas fa-angle-right\"></i>\r\n                </span>\r\n            ");
                 EndContext();
@@ -151,7 +151,7 @@ using SysSonMarket.Models;
             ");
             EndContext();
             BeginContext(1881, 306, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f72dc0fac5b44f2b99eb38a2df5c61f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0a2015ea73ce4f7595da53ef537c2da0", async() => {
                 BeginContext(1985, 198, true);
                 WriteLiteral("\r\n                <span class=\"float-left\">Ver todos</span>\r\n                <span class=\"float-right\">\r\n                    <i class=\"fas fa-angle-right\"></i>\r\n                </span>\r\n            ");
                 EndContext();

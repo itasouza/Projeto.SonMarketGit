@@ -102,7 +102,7 @@
                         <div class="text-success">
                             <h6 class="my-0">Quantidade</h6>
                             <label for="firstName"></label>
-                            <input type="number" class="form-control" id="quantidade" placeholder="" value="" required>
+                            <input type="number" class="form-control" min="1" id="quantidade" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Quantidade do produto e obrigatório!
                             </div>
@@ -128,48 +128,24 @@
             <div id="listagem" class="row">
 
                 <div class="col-md-12">
-                    <table id="dados" class="table table-striped table-bordered responsive nowrap" style="width:100%">
+
+
+                    <table class="table table-borderless table-dark" id="compras">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Qtd</th>
-                                <th>Preço</th>
-                                <th>Total</th>
-                                <th>Remover</th>
+                                <th scope="col" class="table-active">Name</th>
+                                <th scope="col" class="table-active">Qtd</th>
+                                <th scope="col" class="table-active">Preço</th>
+                                <th scope="col" class="table-active">Total</th>
+                                <th scope="col" class="table-active">Remover</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>
-                                    <a class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Deletar" href="#"><i class="fas fa-trash-alt"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Garrett Winters</td>
-                                <td>Accountant</td>
-                                <td>Tokyo</td>
-                                <td>63</td>
-                                <td>
-                                    <a class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Deletar" href="#"><i class="fas fa-trash-alt"></i> </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Ashton Cox</td>
-                                <td>Junior Technical Author</td>
-                                <td>San Francisco</td>
-                                <td>66</td>
-                                <td>
-                                    <a class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Deletar" href="#"><i class="fas fa-trash-alt"></i> </a>
-                                </td>
-                            </tr>
-
 
                         </tbody>
                     </table>
+
+
                 </div>
 
             </div>

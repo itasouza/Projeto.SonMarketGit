@@ -2,6 +2,7 @@
 
 var enderecoUrl = "https://localhost:44393";
 var produto;
+var compra = [];
 
 function preencherFormulario(dadosProduto) {
     $("#campoNomeProduto").html(dadosProduto.nome);
@@ -9,6 +10,7 @@ function preencherFormulario(dadosProduto) {
     $("#CampoNomeFornecedor").html(dadosProduto.fornecedor.nome);
     $("#CampoPreco").html(dadosProduto.precoDeVenda);
 }
+
 
 function zerarFormulario() {
     $("#campoNomeProduto").html("...");
@@ -18,6 +20,23 @@ function zerarFormulario() {
     $("#quantidade").val("");
     $("#codProduto").val("");
 }
+
+function adicionarNaTabela(p, qtd) {
+
+    var produtoTemp = {};
+    Object.assign(produtoTemp, produto);
+    compra.push(produtoTemp);
+
+    $("#compras").append(` <tr> 
+            <td>${p.nome}</td>
+            <td>${qtd}</td>
+            <td>R$ ${p.precoDeVenda}</td>
+            <td>R$ ${p.precoDeVenda * qtd}</td>
+            <td>
+               <a class='btn btn-danger' data-toggle='tooltip' data-placement='top' title='Deletar' href='#'><i class='fas fa-trash-alt'></i> </a>
+            </td>
+    </tr>`);
+ }
 
 
 /*ajax*/
@@ -48,8 +67,9 @@ $("#produtoForm").on("submit", function (event) {
 
     console.log(produtoParaTabela);
     console.log(QuantidadeProduto);
+    adicionarNaTabela(produtoParaTabela, QuantidadeProduto);
 
     //limpar formulário
-    produto = undefined;
+    //produto = undefined;
     zerarFormulario();
 });

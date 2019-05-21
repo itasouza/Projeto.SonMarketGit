@@ -99,8 +99,8 @@ namespace SysSonMarket.Controllers
             ProdutoDto produtoView = new ProdutoDto();
             produtoView.Id = produto.Id;
             produtoView.Nome = produto.Nome;
-            produtoView.PrecoDeCusto = produto.PrecoDeCusto;
-            produtoView.PrecoDeVenda = produto.PrecoDeVenda;
+            produtoView.PrecoDeCustoString = Convert.ToString(produto.PrecoDeCusto);
+            produtoView.PrecoDeVendaString = Convert.ToString(produto.PrecoDeVenda);
             produtoView.Medicao = produto.Medicao;
             produtoView.CategoriaID = produto.Categoria.Id;
             produtoView.FornecedorID = produto.Fornecedor.Id;
@@ -138,6 +138,33 @@ namespace SysSonMarket.Controllers
 
         #endregion
 
+        #region Estoque
+
+        public IActionResult ListarEstoque()
+        {
+            var estoque = database.Estoques.Include(p => p.Produto).Where(q => q.Status == true).ToList();
+            return View(estoque);
+        }
+
+        public IActionResult NovoEstoque()
+        {
+            ViewBag.Produto = database.Produtos.ToList();
+            return View();
+        }
+
+        public IActionResult EditarEstoque(int id)
+        {
+            var estoque = database.Estoques.Include(p => p.Produto).First(e => e.Id == id);
+            ViewBag.Produto = database.Produtos.ToList();
+
+            EstoqueDto estoqueView = new EstoqueDto();
+            estoqueView.Id = estoque.Id;
+            estoqueView.ProdutoID = estoque.Produto.Id;
+            estoqueView.Quantidade = estoque.Quantidade;
+            return View(estoqueView);
+        }
+
+        #endregion
 
     }
 }

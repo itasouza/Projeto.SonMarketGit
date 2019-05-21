@@ -40,16 +40,17 @@
             </div>
         </div>
 
+
         <div class="form-group">
-            <label for="precocusto" asp-for="PrecoDeCusto">Preço de Custo</label>
-            <input type="number" asp-for="PrecoDeCusto" class="form-control" id="precocusto" step="any" placeholder="20.50" />
-            <small class="form-text text-muted"> <span class="text-danger" asp-validation-for="PrecoDeCusto"></span> </small>
+            <label for="precocusto" asp-for="PrecoDeCustoString">Preço de Custo</label>
+            <input type="text" asp-for="PrecoDeCustoString" class="form-control" id="precocusto" step="any" placeholder="20.50" />
+            <small class="form-text text-muted"> <span class="text-danger" asp-validation-for="PrecoDeCustoString"></span> </small>
         </div>
 
         <div class="form-group">
-            <label for="precovenda" asp-for="PrecoDeVenda">Preço de Venda</label>
-            <input type="number" asp-for="PrecoDeVenda" class="form-control" id="precovenda" step="any" placeholder="10.50" />
-            <small class="form-text text-muted"> <span class="text-danger" asp-validation-for="PrecoDeVenda"></span> </small>
+            <label for="precovenda" asp-for="PrecoDeVendaString">Preço de Venda</label>
+            <input type="text" asp-for="PrecoDeVendaString" class="form-control" id="precovenda" step="any" placeholder="10.50" />
+            <small class="form-text text-muted"> <span class="text-danger" asp-validation-for="PrecoDeVendaString"></span> </small>
         </div>
 
         <div class="form-group">

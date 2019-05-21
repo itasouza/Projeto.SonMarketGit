@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -28,8 +29,8 @@ namespace SysSonMarket.Controllers
                 dados.Nome = dadosTemporario.Nome;
                 dados.Categoria = database.Categorias.First(Categoria => Categoria.Id == dadosTemporario.CategoriaID);
                 dados.Fornecedor = database.Fornecedores.First(Fornecedor => Fornecedor.Id == dadosTemporario.FornecedorID);
-                dados.PrecoDeCusto = dadosTemporario.PrecoDeCusto;
-                dados.PrecoDeVenda = dadosTemporario.PrecoDeVenda;
+                dados.PrecoDeCusto = float.Parse(dadosTemporario.PrecoDeCustoString,CultureInfo.InvariantCulture.NumberFormat);
+                dados.PrecoDeVenda = float.Parse(dadosTemporario.PrecoDeVendaString, CultureInfo.InvariantCulture.NumberFormat);
                 dados.Medicao = dadosTemporario.Medicao;
                 dados.Status = true;
                 database.Produtos.Add(dados);
@@ -55,8 +56,8 @@ namespace SysSonMarket.Controllers
                 produto.Nome = dadosTemporario.Nome;
                 produto.Categoria = database.Categorias.First(Categoria => Categoria.Id == dadosTemporario.CategoriaID);
                 produto.Fornecedor = database.Fornecedores.First(Fornecedor => Fornecedor.Id == dadosTemporario.FornecedorID);
-                produto.PrecoDeCusto = dadosTemporario.PrecoDeCusto;
-                produto.PrecoDeVenda = dadosTemporario.PrecoDeVenda;
+                produto.PrecoDeCusto = float.Parse(dadosTemporario.PrecoDeCustoString, CultureInfo.InvariantCulture.NumberFormat);
+                produto.PrecoDeVenda = float.Parse(dadosTemporario.PrecoDeVendaString, CultureInfo.InvariantCulture.NumberFormat);
                 produto.Medicao = dadosTemporario.Medicao;
                 database.SaveChanges();
                 return RedirectToAction("ListarProduto", "Gestao");

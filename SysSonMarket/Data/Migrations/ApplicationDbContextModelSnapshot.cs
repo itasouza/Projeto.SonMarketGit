@@ -209,6 +209,8 @@ namespace SysSonMarket.Data.Migrations
 
                     b.Property<float>("Quantidade");
 
+                    b.Property<bool>("Status");
+
                     b.HasKey("Id");
 
                     b.HasIndex("ProdutoId");

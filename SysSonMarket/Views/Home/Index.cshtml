@@ -140,9 +140,7 @@
                                 <th scope="col" class="table-active">Remover</th>
                             </tr>
                         </thead>
-                        <tbody>
-
-                        </tbody>
+                        <tbody></tbody>
                     </table>
 
 
@@ -153,7 +151,7 @@
             <hr>
 
             <div class="col-sm-8">
-                <button class="btn btn-success btn-lg" id="btnGravar" type="submit">
+                <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal" id="btnGravar" type="submit">
                     Finalizar Compra <i class="fas fa-check-double"></i>
                 </button>
                 <button class="btn btn-danger btn-lg" id="btnGravar" type="submit">
@@ -167,6 +165,48 @@
 
 
     </div>
+
+
+
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Finalizar venda</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h2>Total: <span id="totalvenda">00</span> </h2>
+                    <hr>
+                    <p>Valor pago:</p>
+                    <input type="number" placeholder="12.76" class="form-control" id="valorpago">
+                    <p>Troco:</p>
+                    <input type="number" placeholder="12.76" disabled class="form-control">
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="posvenda">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                    </div>
+                    <div class="prevenda">
+                        <button type="button" class="btn btn-success" id="finalizarVendaBtn">Finalizar venda</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
 
     <footer class="my-5 pt-5 text-muted text-center text-small">
         <p class="mb-1">&copy; 2019 Son Market - Sistema para Supermercado</p>
@@ -188,9 +228,10 @@
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-    <script src="js/form-dataTables.js"></script>
-    <script src="js/form-ajustabtn.js"></script>
+    <script src="~/js/form-dataTables.js"></script>
+    <script src="~/js/form-ajustabtn.js"></script>
     <script src="~/js/form-frente-caixa.js"></script>
+
 
 
 

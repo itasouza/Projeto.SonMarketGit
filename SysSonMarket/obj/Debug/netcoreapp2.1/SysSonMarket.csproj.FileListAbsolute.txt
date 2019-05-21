@@ -88,3 +88,6 @@ C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\SysSonMarket
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\SysSonMarket.dll
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\SysSonMarket.pdb
 C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\SysSonMarket.csproj.CopyComplete
+C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Views\Gestao\NovoEstoque.g.cshtml.cs
+C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Views\Gestao\ListarEstoque.g.cshtml.cs
+C:\GitHub\Projeto.SonMarketGit\SysSonMarket\obj\Debug\netcoreapp2.1\Razor\Views\Gestao\EditarEstoque.g.cshtml.cs

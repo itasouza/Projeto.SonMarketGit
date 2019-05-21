@@ -25,8 +25,14 @@ namespace SysSonMarket.Dto
         [Required(ErrorMessage ="Preço de custo do produto e obrigatório")]
         public float PrecoDeCusto { get; set; }
 
+        [Required(ErrorMessage = "Preço de custo do produto e obrigatório")]
+        public string PrecoDeCustoString { get; set; }
+
         [Required(ErrorMessage = "Preço de venda do produto e obrigatório")]
         public float PrecoDeVenda { get; set; }
+
+        [Required(ErrorMessage = "Preço de venda do produto e obrigatório")]
+        public string PrecoDeVendaString { get; set; }
 
         [Required(ErrorMessage = "Medição do produto e obrigatório")]
         [Range(0,2,ErrorMessage ="Medição inválida")]

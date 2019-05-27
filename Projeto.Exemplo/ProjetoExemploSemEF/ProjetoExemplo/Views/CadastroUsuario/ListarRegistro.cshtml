@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Generico.Dominio.TB_USUARIO>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+
+            <th>Nome </th>
+            <th>Login</th>
+            <th>Administrador</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+
+            @if (Model.Count() > 0)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.NOME</td>
+                        <td>@item.LOGIN</td>
+                        <td>@item.ADMINISTRADOR</td>
+                        <td><a href="/CadastroUsuario/AlteraRegistro/@item.IDUSUARIO" class="icon-pencil icon-large">ALTERAR</a></td>
+                        <td><a href="/CadastroUsuario/ExcluirRegistro/@item.IDUSUARIO" class="icon-trash icon-large">EXCLUIR</a></td>
+                    </tr>
+                }
+
+            }
+
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="4">Total de Registros: @Model.Count()</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<div class="container droppedHover">
+    <br />
+    <div class="row">
+
+
+        <div class="span6">
+            <a href="@Url.Action("Index", "CadastroUsuario")" class="btn btn-lg btn-block btn-warning glyphicon glyphicon-hand-left">
+                Retorno
+            </a>
+        </div>
+
+
+    </div>
+
+</div>

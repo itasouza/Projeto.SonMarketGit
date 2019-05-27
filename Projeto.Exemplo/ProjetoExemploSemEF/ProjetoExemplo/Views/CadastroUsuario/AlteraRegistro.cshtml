@@ -1,0 +1,83 @@
+﻿@model Generico.Dominio.TB_USUARIO
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+@using (Html.BeginForm("AlteraRegistroUpdate", "CadastroUsuario", FormMethod.Post))
+{
+
+    <div class="container">
+        <div class="col-sm-1 form-group">
+            @Html.TextBoxFor(x => x.IDUSUARIO, new { style = "display: none;" })
+        </div>
+    </div>
+
+    <div class="container">
+        <h4>Alteração cadastro de usuário</h4>
+        <hr />
+        <div class="col-md-3 form-group">
+            @Html.LabelFor(x => x.NOME)
+            @Html.TextBoxFor(x => x.NOME, new { placeholder = "Insira o nome do usuário", @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.NOME)
+
+        </div>
+        <div class="col-md-3 form-group">
+            @Html.LabelFor(x => x.LOGIN)
+            @Html.TextBoxFor(x => x.LOGIN, new { placeholder = "logindo usuário", @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.LOGIN)
+        </div>
+        <div class="col-md-3 form-group">
+            @Html.LabelFor(x => x.SENHA)
+            @Html.TextBoxFor(x => x.SENHA, new { placeholder = "Senha do usuário", @class = "form-control", type = "password" })
+            @Html.ValidationMessageFor(x => x.SENHA)
+        </div>
+
+        <div class="col-md-1 form-group">
+            @Html.LabelFor(x => x.ADMINISTRADOR)
+            @Html.CheckBoxFor(x => x.ADMINISTRADOR, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.ADMINISTRADOR)
+        </div>
+
+    </div>
+
+    <hr />
+
+    <div class="container droppedHover">
+
+
+        <div class="row">
+
+            <div class="col-md-1 form-group">
+                <input type="submit" name="btnEnviar" id="btnEnviar" value="Altera" class="btn btn-primary" />
+            </div>
+
+            <div class="col-md-1 form-group">
+                <input type="reset" name="btnLimpar" id="btnLimpar" value="Limpar" class="btn btn-danger" />
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="container droppedHover">
+        <br />
+        <div class="row">
+
+            <div class="span6">
+                <a href="@Url.Action("ListarRegistro", "CadastroUsuario")" class="btn btn-lg btn-block btn-warning glyphicon glyphicon-hand-left">
+                    Retorno
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+}

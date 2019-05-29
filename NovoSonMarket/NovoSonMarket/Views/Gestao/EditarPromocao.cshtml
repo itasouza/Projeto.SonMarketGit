@@ -1,7 +1,91 @@
-﻿
+﻿@model NovoSonMarket.Dto.PromocaoDTO
+
 @{
     ViewData["Title"] = "EditarPromocao";
 }
 
-<h2>EditarPromocao</h2>
 
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <!-- BEGIN PAGE BAR -->
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                    <i class="fa fa-circle"></i>
+                </li>
+                <li>
+                    <span>Editar Promoção</span>
+                </li>
+            </ul>
+
+        </div>
+        <!-- END PAGE BAR -->
+        <!-- BEGIN PAGE TITLE-->
+        <h1 class="page-title"></h1>
+
+        <!-- Tela de cadastro genérico-->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <i class="icon-settings font-dark"></i>
+                            <span class="caption-subject bold uppercase">Editar Promoção</span>
+                        </div>
+                        <div class="tools"> </div>
+                    </div>
+
+                    <div class="portlet-body form">
+
+                        <form role="form" asp-controller="Promocao" asp-action="Salvar" method="post">
+                            <div class="form-body">
+                                <input type="hidden" asp-for="Id" />
+
+                                <div class="form-group">
+                                    <label for="nome" asp-for="Nome">Nome</label>
+                                    <input type="text" asp-for="Nome" class="form-control" id="nome" placeholder="Nome do Produto" />
+                                    <small class="form-text text-muted"> <span class="text-danger" asp-validation-for="Nome"></span> </small>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-sm-6">
+                                        <label for="produto" asp-for="Nome">Nome do Produto</label>
+                                        <div class="form-group">
+                                            <select class="selectpicker form-control" id="produto" asp-for="ProdutoID" asp-items="@(new SelectList(@ViewBag.Produto,"Id", "Nome"))" data-live-search="true"></select>
+                                            <small class="form-text text-muted"> <span class="text-danger" asp-validation-for="ProdutoID"></span> </small>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="porcentagem" asp-for="Porcentagem">Porcentagem de Promoção</label>
+                                    <input type="number" asp-for="Porcentagem" class="form-control" id="porcentagem" step="any" placeholder="20.50" />
+                                    <small class="form-text text-muted"> <span class="text-danger" asp-validation-for="Porcentagem"></span> </small>
+                                </div>
+
+
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn blue">Atualizar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+        <!-- fim Tela de cadastro genérico-->
+
+
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+<!-- END CONTENT -->

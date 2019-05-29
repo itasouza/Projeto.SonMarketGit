@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NovoSonMarket.Data;
-using SysSonMarket.Dto;
+using NovoSonMarket.Dto;
+using X.PagedList;
 
 namespace NovoSonMarket.Controllers
 {
@@ -75,9 +76,16 @@ namespace NovoSonMarket.Controllers
 
 
         #region Produto
-        public IActionResult ListarProduto()
+        public IActionResult ListarProduto(string busca = "", int pagina = 1, int tamanhoPagina = 10)
         {
-            var produto = database.Produtos.Include(p => p.Categoria).Include(p => p.Fornecedor).Where(p => p.Status == true).ToList();
+
+            var produto = database.Produtos.Include(p => p.Categoria).Include(p => p.Fornecedor).Where(pro => pro.Nome.Contains(busca))
+                                          .OrderBy(pro => pro.Id)
+                                          .ToPagedList(pagina, tamanhoPagina);
+
+            ViewBag.Busca = busca;
+            ViewBag.TamanhoPagina = tamanhoPagina;
+
             return View(produto);
         }
 

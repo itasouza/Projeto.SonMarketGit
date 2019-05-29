@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SysSonMarket.Models
+namespace NovoSonMarket.Models
 {
     public class Saida
     {

@@ -9,3 +9,9 @@ E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Domin
 E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Dominio\obj\Debug\Generico.Dominio.csproj.CoreCompileInputs.cache
 E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Dominio\obj\Debug\Generico.Dominio.dll
 E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Dominio\obj\Debug\Generico.Dominio.pdb
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Dominio\bin\Debug\Generico.Dominio.dll
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Dominio\bin\Debug\Generico.Dominio.pdb
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Dominio\obj\Debug\Generico.Dominio.csprojAssemblyReference.cache
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Dominio\obj\Debug\Generico.Dominio.csproj.CoreCompileInputs.cache
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Dominio\obj\Debug\Generico.Dominio.dll
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Dominio\obj\Debug\Generico.Dominio.pdb

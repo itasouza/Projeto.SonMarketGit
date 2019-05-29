@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SysSonMarket.Models.Estoque>
+﻿@model IEnumerable<NovoSonMarket.Models.Estoque>
 
 @{
     ViewData["Title"] = "ListarEstoque";
@@ -35,7 +35,8 @@
                     <div class="portlet-title">
                         <div class="caption font-dark">
                             <i class="icon-settings font-dark"></i>
-                            <span class="caption-subject bold uppercase">Lista de Estoque</span>
+                            <span class="caption-subject bold uppercase">Lista de Estoque</span><br /><br />
+                            <a asp-action="NovoEstoque" asp-controller="Gestao" class="btn btn-success">Criar Estoque</a>
                         </div>
                         <div class="tools"> </div>
                     </div>

@@ -1,7 +1,78 @@
-﻿
+﻿@model NovoSonMarket.Dto.CategoriaDto
+
 @{
     ViewData["Title"] = "NovaCategoria";
 }
 
-<h2>NovaCategoria</h2>
 
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <!-- BEGIN PAGE BAR -->
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                    <i class="fa fa-circle"></i>
+                </li>
+                <li>
+                    <span>Cadastro de Cetagoria</span>
+                </li>
+            </ul>
+
+        </div>
+        <!-- END PAGE BAR -->
+        <!-- BEGIN PAGE TITLE-->
+        <h1 class="page-title"></h1>
+
+        <!-- Tela de cadastro genérico-->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <i class="icon-settings font-dark"></i>
+                            <span class="caption-subject bold uppercase">Cadastro de Cetagoria</span>
+                        </div>
+                        <div class="tools"> </div>
+                    </div>
+
+                    <div class="portlet-body form">
+                         
+                        <form role="form" asp-controller="Categoria" asp-action="Salvar" method="post">
+                            <div class="form-body">
+                                <input type="hidden" asp-for="Id" value="0" />
+
+                                <div class="form-group">
+                                    <label>Nome da Categoria</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-circle"></i>
+                                        </span>
+                                        <input type="text" asp-for="Nome" class="form-control" id="nome" placeholder="Nome da Categoria" />
+
+                                    </div>
+                                    <small class="form-text text-muted"> <span class="text-danger" asp-validation-for="Nome"></span> </small>
+                                </div>
+                      
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn blue">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+        <!-- fim Tela de cadastro genérico-->
+
+
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+<!-- END CONTENT -->

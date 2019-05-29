@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using SysSonMarket.Models;
+using NovoSonMarket.Models;
 
 namespace NovoSonMarket.Data
 {

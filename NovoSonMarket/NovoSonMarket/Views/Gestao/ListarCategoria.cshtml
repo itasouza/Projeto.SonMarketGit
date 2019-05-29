@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SysSonMarket.Models.Categoria>
+﻿@model IEnumerable<NovoSonMarket.Models.Categoria>
 
 @{
     ViewData["Title"] = "ListarCategoria";
@@ -35,7 +35,8 @@
                     <div class="portlet-title">
                         <div class="caption font-dark">
                             <i class="icon-settings font-dark"></i>
-                            <span class="caption-subject bold uppercase">Lista de Categoria</span>
+                            <span class="caption-subject bold uppercase">Lista de Categoria</span><br /><br />
+                            <a asp-action="NovaCategoria" asp-controller="Gestao" class="btn btn-success">Criar Categoria</a>
                         </div>
                         <div class="tools"> </div>
                     </div>

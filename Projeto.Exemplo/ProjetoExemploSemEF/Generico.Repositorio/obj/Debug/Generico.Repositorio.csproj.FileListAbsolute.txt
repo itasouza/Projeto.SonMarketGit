@@ -9,3 +9,9 @@ E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Repos
 E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Repositorio\obj\Debug\Generico.Repositorio.csproj.CoreCompileInputs.cache
 E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Repositorio\obj\Debug\Generico.Repositorio.dll
 E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Repositorio\obj\Debug\Generico.Repositorio.pdb
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Repositorio\bin\Debug\Generico.Repositorio.dll
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Repositorio\bin\Debug\Generico.Repositorio.pdb
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Repositorio\obj\Debug\Generico.Repositorio.csprojAssemblyReference.cache
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Repositorio\obj\Debug\Generico.Repositorio.csproj.CoreCompileInputs.cache
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Repositorio\obj\Debug\Generico.Repositorio.dll
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Repositorio\obj\Debug\Generico.Repositorio.pdb

@@ -1,7 +1,83 @@
-﻿
+﻿@model NovoSonMarket.Dto.EstoqueDto
+
 @{
     ViewData["Title"] = "NovoEstoque";
 }
 
-<h2>NovoEstoque</h2>
+
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <!-- BEGIN PAGE BAR -->
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <a href="#">Home</a>
+                    <i class="fa fa-circle"></i>
+                </li>
+                <li>
+                    <span>Cadastro de Estoque</span>
+                </li>
+            </ul>
+
+        </div>
+        <!-- END PAGE BAR -->
+        <!-- BEGIN PAGE TITLE-->
+        <h1 class="page-title"></h1>
+
+        <!-- Tela de cadastro genérico-->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light bordered">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <i class="icon-settings font-dark"></i>
+                            <span class="caption-subject bold uppercase">Cadastro de Estoque</span>
+                        </div>
+                        <div class="tools"> </div>
+                    </div>
+
+                    <div class="portlet-body form">
+
+                        <form role="form" asp-controller="Estoque" asp-action="Salvar" method="post">
+                            <div class="form-body">
+                                <input type="hidden" asp-for="Id" value="0" />
+
+
+                                <div class="form-group">
+                                    <label for="categoria" asp-for="ProdutoID">Nome do Produto</label>
+                                    <div class="form-group">
+                                        <select class="selectpicker form-control" id="categoria" asp-for="ProdutoID" asp-items="@(new SelectList(@ViewBag.Produto,"Id", "Nome"))" data-live-search="true"></select>
+                                        <small class="form-text text-muted"> <span class="text-danger" asp-validation-for="ProdutoID"></span> </small>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="quantidade" asp-for="Quantidade">Quantidade</label>
+                                    <input type="number" asp-for="Quantidade" class="form-control" id="quantidade" step="any" />
+                                    <small class="form-text text-muted"> <span class="text-danger" asp-validation-for="Quantidade"></span> </small>
+                                </div>
+
+
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn blue">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+        <!-- fim Tela de cadastro genérico-->
+
+
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+<!-- END CONTENT -->
 

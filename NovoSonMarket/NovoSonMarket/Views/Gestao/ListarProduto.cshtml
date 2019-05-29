@@ -1,4 +1,6 @@
-﻿@model IEnumerable<SysSonMarket.Models.Produto>
+﻿
+@using X.PagedList.Mvc.Core;
+@model X.PagedList.PagedList<NovoSonMarket.Models.Produto>
 
 @{
     ViewData["Title"] = "ListarProduto";
@@ -35,13 +37,14 @@
                     <div class="portlet-title">
                         <div class="caption font-dark">
                             <i class="icon-settings font-dark"></i>
-                            <span class="caption-subject bold uppercase">Lista de Produto</span>
+                            <span class="caption-subject bold uppercase">Lista de Produto</span><br /><br />
+                            <a asp-action="NovoProduto" asp-controller="Gestao" class="btn btn-success">Criar Produto</a>
                         </div>
                         <div class="tools"> </div>
                     </div>
                     <div class="portlet-body">
 
-                        <table class="table table-striped table-bordered table-hover" id="sample_1">
+                        <table class="table table-striped table-bordered table-hover" id="sample_2">
                             <thead>
                                 <tr>
                                     <th>Id</th>
@@ -70,36 +73,49 @@
 
                                 @foreach (var produto in Model)
                                 {
-                                <tr>
-                                    <td>@produto.Id</td>
-                                    <td>@produto.Nome</td>
-                                    <td>@produto.Categoria.Nome</td>
-                                    <td>@produto.Fornecedor.Nome</td>
-                                    <td>(R$)@produto.PrecoDeCusto</td>
-                                    <td>(R$)@produto.PrecoDeVenda</td>
-                                    <td>
-                                        @if (@produto.Medicao == 0)
-                                        {<span>Litro</span>}
-                                        else if (@produto.Medicao == 1)
-                                        { <span>Kilo</span> }
-                                        else
-                                        {<span>Unidade</span>}
+                                    <tr>
+                                        <td>@produto.Id</td>
+                                        <td>@produto.Nome</td>
+                                        <td>@produto.Categoria.Nome</td>
+                                        <td>@produto.Fornecedor.Nome</td>
+                                        <td>(R$)@produto.PrecoDeCusto</td>
+                                        <td>(R$)@produto.PrecoDeVenda</td>
+                                        <td>
+                                            @if (@produto.Medicao == 0)
+                                            {<span>Litro</span>}
+                                            else if (@produto.Medicao == 1)
+                                            { <span>Kilo</span> }
+                                            else
+                                            {<span>Unidade</span>}
 
-                                    </td>
-                                    <td>
-                                        <a class="btn btn-primary" href="/Gestao/EditarProduto/@produto.Id">Editar</a>
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-primary" href="/Gestao/EditarProduto/@produto.Id">Editar</a>
 
-                                        <form asp-controller="Produto" asp-action="Deletar" style="display:inline;">
-                                            <input type="hidden" name="id" id="id" value="@produto.Id" />
-                                            <button class="btn btn-danger">Deletar</button>
-                                        </form>
-                                    </td>
+                                            <form asp-controller="Produto" asp-action="Deletar" style="display:inline;">
+                                                <input type="hidden" name="id" id="id" value="@produto.Id" />
+                                                <button class="btn btn-danger">Deletar</button>
+                                            </form>
+                                        </td>
 
-                                </tr>
+                                    </tr>
                                 }
 
                             </tbody>
                         </table>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                @Html.PagedListPager(Model, pagina => Url.Action("ListarProduto", new { pagina, busca = ViewBag.Busca, tamanhoPagina = ViewBag.TamanhoPagina }))
+                            </div>
+                            <div class="col-md-6">
+                                <span class="pull-right">
+                                    Listando registros de @Model.FirstItemOnPage a @Model.LastItemOnPage de um total de @Model.TotalItemCount
+                                </span>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
                 <!-- END EXAMPLE TABLE PORTLET-->

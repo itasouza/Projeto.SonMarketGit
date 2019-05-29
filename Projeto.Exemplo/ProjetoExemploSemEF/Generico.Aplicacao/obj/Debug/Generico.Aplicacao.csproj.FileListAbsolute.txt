@@ -18,3 +18,14 @@ E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplic
 E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\obj\Debug\Generico.Aplicacao.csproj.CopyComplete
 E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\obj\Debug\Generico.Aplicacao.dll
 E:\A - Multiplick Publicidade\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\obj\Debug\Generico.Aplicacao.pdb
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\bin\Debug\Generico.Aplicacao.dll
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\bin\Debug\Generico.Aplicacao.pdb
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\bin\Debug\Generico.Dominio.dll
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\bin\Debug\Generico.Repositorio.dll
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\bin\Debug\Generico.Dominio.pdb
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\bin\Debug\Generico.Repositorio.pdb
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\obj\Debug\Generico.Aplicacao.csprojAssemblyReference.cache
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\obj\Debug\Generico.Aplicacao.csproj.CoreCompileInputs.cache
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\obj\Debug\Generico.Aplicacao.csproj.CopyComplete
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\obj\Debug\Generico.Aplicacao.dll
+C:\GitHub\Projeto.SonMarketGit\Projeto.Exemplo\ProjetoExemploSemEF\Generico.Aplicacao\obj\Debug\Generico.Aplicacao.pdb

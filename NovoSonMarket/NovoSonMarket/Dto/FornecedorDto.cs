@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SysSonMarket.Dto
+namespace NovoSonMarket.Dto
 {
     public class FornecedorDto
     {

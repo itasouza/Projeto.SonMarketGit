@@ -22,7 +22,7 @@ namespace ProjetoExemplo.Controllers
         public ActionResult ListarRegistro()
         {
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 5; i++)
             {
                 //lista produto
                 var tbuscar = new CadastroProdutoAplicacao();

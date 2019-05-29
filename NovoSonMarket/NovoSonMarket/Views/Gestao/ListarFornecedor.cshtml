@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SysSonMarket.Models.Fornecedor>
+﻿@model IEnumerable<NovoSonMarket.Models.Fornecedor>
 
 @{
     ViewData["Title"] = "ListarFornecedor";
@@ -36,7 +36,8 @@
                     <div class="portlet-title">
                         <div class="caption font-dark">
                             <i class="icon-settings font-dark"></i>
-                            <span class="caption-subject bold uppercase">Lista de Fornecedor</span>
+                            <span class="caption-subject bold uppercase">Lista de Fornecedor</span><br /><br />
+                            <a asp-action="NovoFornecedor" asp-controller="Gestao" class="btn btn-success">Criar Fornecedor</a>
                         </div>
                         <div class="tools"> </div>
                     </div>
